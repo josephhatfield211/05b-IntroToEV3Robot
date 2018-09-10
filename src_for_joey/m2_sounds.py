@@ -10,11 +10,15 @@ their colleagues, and Joey Hatfield.
 #   Using the DOT trick, add code to  make_sounds  to make the robot
 #   make sounds in various ways:  Beep, Tone, Speech, Song.
 # ------------------------------------------------------------------------------
-
+import rosebotics as rb
 def main():
+
+
     make_sounds()
-
-
+    yeet = rb.Beep()
+    yeet.play()
+    yeet.play()
+    yeet.play()
 def make_sounds():
     fun_song = [(392, 350, 100), (392, 350, 100), (392, 350, 100), (311.1, 250, 100),
         (466.2, 25, 100), (392, 350, 100), (311.1, 250, 100), (466.2, 25, 100),
@@ -33,3 +37,7 @@ def make_sounds():
         (466.16, 25, 100), (440, 25, 100), (466.16, 50, 400), (311.13, 25, 200),
         (392, 350, 100), (311.13, 250, 100), (466.16, 25, 100), (392.00, 300, 150),
         (311.13, 250, 100), (466.16, 25, 100), (392, 700)]
+
+
+main()
+
